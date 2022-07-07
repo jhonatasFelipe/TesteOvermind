@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+
+    form{
+        padding:10px;
+        border: solid 2px #bbb;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div{
+        .error{
+            @extend .icon;
+            color:red;
+        }
+
+        .sucess{
+            @extend .icon;
+            color:limegreen;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p, h1{
+            text-align: center;
+        }
+        .icon{
+            font-size: 100px;
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+.error-senha{
+    font-size: 10px;
+    color: red;
+    margin-bottom: 10px;
+}
